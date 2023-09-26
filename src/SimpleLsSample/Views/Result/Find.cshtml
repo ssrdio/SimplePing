@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Ping";
+}
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <img style="width:500px;" src="https://cdn.pixabay.com/photo/2016/04/01/09/16/cartoon-1299247_1280.png" />
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-md-auto">
+                <h1>Ping my dear friend</h1>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-md-auto">
+                <form method="post">
+                    <label for="search">Ping:</label>
+                    <input type="search" id="search" name="search">
+                    <input type="submit">
+                </form>
+                </div>
+            </div>
+        <div class="row justify-content-md-center" >
+            <div class="col col-lg-6">
+            @{
+                if (ViewBag.showResults == true)
+                {
+                    @model string
+
+                        <textarea class="col-lg-12" style="height:400px">
+                            @Model 
+                            </textarea>
+       
+                }
+            }
+            </div>
+        </div>
+    </div>
+     
+
+       
+
+    </body>
+</html>

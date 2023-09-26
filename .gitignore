@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs
+/src/SimpleLsSample/bin/Debug/net6.0
+/src/SimpleLsSample/obj
+/src/SimpleLsSample/SimpleLsSample.csproj.user
+/src/SimpleLsSample/pingig.db
+/src/SimpleLsSample/pingig.db-shm
+/src/SimpleLsSample/pingig.db-wal
+/docker-entrypoint.sh
+/src/SimpleLsSample/config/supervisord.conf
